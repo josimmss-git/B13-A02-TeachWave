@@ -1,0 +1,208 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{ 
+  background: #1A0B2E;
+  margin: 0 auto;
+
+}
+
+.container{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+ 
+}
+
+nav .nav-content {
+  display: flex;
+  color: #ffffffff;
+  justify-content: space-between;
+  align-items: center;
+  height: 92px;
+
+}
+
+
+nav .nav-content ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 228px;
+  height: 19px;
+  gap: 32px;
+
+  
+}
+
+nav .nav-content ul li a {
+  text-decoration: none;
+  color: #ffffffff;
+}
+
+.nav-content .image{
+  width: 219px;
+  height: 28px;
+ 
+}
+.nav-content .nav-menu {
+display: none;
+}
+
+ .nav-content .btn {
+  width: 135px;
+  height: 44px;
+  padding: 12px 16px;
+   background: linear-gradient( #F7E93F, #FB09B4, #9100F8 );
+   border-radius: 35px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: url(./assets/hero-bg.png);
+ 
+}
+
+.hero-content{
+
+  width: 550px;
+  height: 558px;
+  margin: 0 auto;
+ 
+}
+
+ .hero_discription h1{
+  color: white;
+ }
+   
+
+
+
+.hero-content .hero-two-circle{
+   width: 100%;
+  max-width:350px;
+  height: 100%;
+  max-height: 350px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.hero-content .hero-two-circle .hero-circle {
+ 
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+  
+
+}
+
+.hero-content .hero-two-circle .hero-speaker {
+  width: 200px;
+  height: 200px;
+   position: absolute;
+  z-index: 3;
+  margin-top:  70px;
+  margin-left: 75px;
+  border-radius: 50%;
+  
+
+
+}
+.hero-content span {
+  width: 75px;
+  height: 38px;
+  padding: 8px 16px;
+  color:#1A0B2E;
+  background: #00FF88;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 4;
+  right: 20px;
+  margin-top: 20px;
+
+}
+.hero_discription {
+  width: 550px;
+  height: 168px;
+  margin-top: 40px;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.hero_discription h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.hero_discription p{
+  color: white;
+   padding-bottom: 10px;
+
+}
+
+
+ .spotify {
+  width: 201px;
+  height: 44px;
+  padding: 12px 20px;
+   background: linear-gradient( #F7E93F, #FB09B4, #9100F8 );
+   border-radius: 35px;
+   text-align: center;
+   align-items: center;
+   gap: 10px;
+   
+
+  
+}
+
+
+
+.hero_discription .btn-2 {
+  color: #00ffe5fa;
+  border: 1px solid #00ffe5fa;
+  background: #1a0b2e62;
+  width: 200px;
+  height: 44px;
+  border-radius: 35px;
+  padding: 12px 20px;
+ 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+
+  .nav-content .nav-menu {
+display: inline;
+width: 24px;
+
+}
+
+.nav-content ul li a, .btn {
+  display: none;
+}
+}
