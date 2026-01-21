@@ -47,8 +47,10 @@ nav .nav-content ul li a {
 }
 
 .nav-content .image{
-  width: 219px;
-  height: 28px;
+  width: 100%;
+  max-width: 219px;
+  height: 100%;
+  max-height: 28px;
  
 }
 .nav-content .nav-menu {
@@ -65,14 +67,13 @@ display: none;
 
 header {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
   background: url(./assets/hero-bg.png);
  
 }
 
 .hero-content{
-
   width: 550px;
   height: 558px;
   margin: 0 auto;
@@ -92,7 +93,6 @@ header {
   max-width:350px;
   height: 100%;
   max-height: 350px;
-  width: 100%;
   position: relative;
   margin: 0 auto;
 }
@@ -342,6 +342,7 @@ header {
 #Featured {
   width: 100%;
   max-width: 1600px;
+  height: 100%;
   background:  #1A0B2E;
   padding: 120px 200px;
   margin: 0 auto;
@@ -419,9 +420,11 @@ footer{
   max-width: 460px;
   height: 100%;
   max-height: 60px;
-  text-align: center;
+   text-align: center;
   justify-content: center;
   justify-content: center;
+ padding-bottom: 20px;
+  margin: 0 auto;
 }
   
 }
@@ -444,14 +447,10 @@ footer{
  
 }
 
-
-
-
-
-
-
- 
-
+.copy-right {
+  text-align: center;
+  padding-top: 20px;
+}
 
 
 
@@ -472,7 +471,7 @@ width: 24px;
 }
 
 .about-ratting{
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -480,28 +479,28 @@ width: 24px;
 .tech-menu {
   display: inline-block;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
   row-gap: 20px;
 }
 
 
 .item-1 {
   grid-column: span 1;
-  grid-row: span 2;
+  grid-row: span 1;
 }
 
 .item-2 {
-  grid-column: span 2;
+  grid-column: span 1;
   grid-row: span 1;
 }
 
 .item-3 {
-  grid-column: span 2;
+  grid-column: span 1;
   grid-row: span 1;
 }
 
 .item-4 {
-  grid-column: span 2;
+  grid-column: span 1;
   grid-row: span 1;
 }
 
@@ -509,4 +508,51 @@ width: 24px;
   grid-column: span 1;
   grid-row: span 1;
 }
+
+.host-content{
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+
+.sponser-pic{
+ flex-direction: column;
+ gap: 10px;
+
+}
+.featured-content {
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  padding: 10px 0px;
+}
+.host-content{
+  flex-direction: column;
+}
+#Featured{
+  padding: 10px 0px;
+}
+footer{
+  padding: 10px 0px;
+}
+.tech-head {
+  padding: 10px 0px;
+}
+.tech-card{
+  padding: 10px 0px;
+}
+.tech-head {
+  text-align: center;
+}
+
+.host-details{
+  text-align: center;
+}
+
+.hero_discription{
+  width: 100%;
+  
+}
+
+
 }
