@@ -201,8 +201,9 @@ header {
   max-width: 1200px;
   height: 100%;
   max-height: 58px;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
+  padding: 50px;
 
 }
 
@@ -255,38 +256,47 @@ header {
  background: #230E3D;
 }
 
+
 .heading {
   width: 100%;
   max-width: 1200px;
-  height: 58px;
+  height: 100%;
+   max-height: 58px;
 }
 
 .tech-head{
+  padding: 80px;
+  margin-top: 80px;
   text-align: center;
   align-items: center;
   padding: 30px auto; 
 } 
 
 .tech-head h1 {
-
   font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
 
-.tech-menu .tech-card{
+
+.tech-menu {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  max-height: 780px;
+  margin: 0 auto;
   
-  max-width: 380px;
-  max-height: 480px;
+}
+
+.tech-menu .tech-card{
+  width: 100%;
+  height: 100%;
   padding: 40px;
   background: #35116569;
   border-radius: 20px;
 
 }
-.tech-card p{
-  
- max-width: 50px;
-}
+
 .tech-card h4{
   font-size: 24px;
   font-weight: bold;
@@ -296,20 +306,72 @@ header {
   line-height: 24px;
   color: #FFFFFF;
 }
-/* 
-.tech-menu{
-  display: flex;
-  flex-direction: column;
-  
-} */
- 
+
 .tech-menu {
-  height: 100%;
   display: grid;
-  gap: 30px;
-  grid-template-columns:auto auto auto;
-  grid-template-rows: auto auto auto;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
+}
+
+.item-1 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item-2 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item-3 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item-4 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item-5 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+#Featured {
+  width: 100%;
+  max-width: 1600px;
+  background:  #1A0B2E;
+  padding: 120px 200px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.featured-content {
+  padding: 20px
+}
+
+.video-details h2{
+  font-size: 24px;
+  font-weight: bold;
  
+}
+.video-details p{
+  line-height: 24px;
+}
+.featured-video {
+  width: 380px;
+  height: 440px;
+
+}
+.featured-content {
+  display: flex;
+  gap: 20px;
+}
+
+.host-content {
+  display: flex;
 }
 
 
@@ -340,5 +402,39 @@ width: 24px;
 .about-ratting{
   flex-wrap: wrap;
   align-items: center;
+}
+
+
+.tech-menu {
+  display: inline-block;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+}
+
+
+.item-1 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item-2 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item-3 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item-4 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item-5 {
+  grid-column: span 1;
+  grid-row: span 1;
 }
 }
